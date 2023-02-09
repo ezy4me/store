@@ -1,0 +1,69 @@
+$primary-color: #000;
+$primary-color-80: rgba(0, 0, 0, 0.8);
+$primary-color-50: rgba(0, 0, 0, 0.5);
+
+$white: white;
+$primary: #FF5A30;
+$success: #03CEA4;
+$danger: #FF4242;
+$warning: #F89828;
+$info: #5A87FC;
+
+$gray-900: #1E212C;
+$gray-800: #424551;
+$gray-700: #787A80;
+$gray-600: #9A9CA5;
+$gray-500: #B3B7BC;
+$gray-400: #D7DADD;
+$gray-300: #E5E8ED;
+$gray-200: #F4F5F7;
+$gray-100: #F9F9F9;
+
+$link-color-active: #1c0033;
+$hover-color: #fff;
+
+
+$font-size: 16px;
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+$background-color: #f2f2f2;
+$list-style: none;
+$text-decoration: none;
+
+/// LINK ///
+%link-style {
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+}
+
+%link-style::after {
+    display: block;
+    margin-top: 2px;
+    content: "";
+    height: 2px;
+    width: 0%;
+    // background-color: #6563ff;42aaff
+    background-color: #42aaff;
+    transition: width 0.2s ease-in-out;
+}
+
+%link-style:hover:after,
+%link-style:focus:after {
+    width: 100%;
+}
+
+%link-style:hover {
+    color: #42aaff;
+}
+
+%btn-style {
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid $gray-700;
+    border-right: 1px solid $gray-600;
+    border-left: 1px solid $gray-500;
+    border-top: 1px solid $gray-400;
+    border-radius: 5px;
+    background: #42aaff;
+}

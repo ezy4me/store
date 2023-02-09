@@ -1,0 +1,38 @@
+.product-card {
+  width: 100%;
+  padding: 1rem;
+  // height: 400px;
+  border-left: 1px solid $gray-200;
+  border-right: 1px solid $gray-400;
+  border-bottom: 1px solid $gray-500;
+  border-radius: 1rem;
+
+  &__title {
+    margin: 1rem 0;
+    height: 1rem;
+  }
+
+  &__price {
+    margin: 2rem 0;
+  }
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.catalog {
+  &__item:hover {
+    background-color: rgba(0, 0, 0, .05);
+    display: block;
+    z-index: 2;
+    border-radius: 1rem;
+  }
+
+}
+
+// .product-card:hover{
+//   opacity: 0.8;
+//   background: $gray-200;
+// }
